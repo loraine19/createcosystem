@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <title>CREATE ECO SYSTEM</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./W3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Kanit", sans-serif}
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      min-width:375px;
+      padding-left:0%;
+      padding-right:0%;
+      line-height: 1.2;
+      font-family: "Kanit", sans-serif;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      vertical-align: bottom;
+      background-size: cover;
+      background-image: url("./images/fond.png");
+      height: auto;
+      min-height:725px;
+      width: auto;
+      max-width:120%;
+      min-width:50%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 15px;
+    
+    }
+
+ .msg {position: absolute;
+ background-color:#ff000000;
+ opacity: 1;
+ z-index:999;}
+
+ .index {position: static;
+ background-color:red}
+    </style>
+  </head>
+<body>
+
+<div class=" w3-center msg  id="contact" style="width:100%!important;padding-left:0%;padding-top:62px;z-index:2">
+    <div class="w3-card w3-white w3-hover-shadow" style="height:100%">
+<p style="padding:5px">Votre message a été envoyé, nous vous recontacterons rapidement
+<a href="./index.html"><i class="fa fa-close" style="float:right;padding:3px;padding-right:20px"></i></a>
+</p></div></div>
+
+
+
+
+<!--INDEX-->
+<script>
+$.get("index.html", function(data){
+    $("#index-placeholder").replaceWith(data);
+})
+</script> 
+<div class="index" id="index-placeholder" > </div>
+   
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./W3.css">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e0742c2c39.js" crossorigin="anonymous"></script>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Kanit", sans-serif}
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      min-width:370px;
+      padding-left:0%;
+      padding-right:0%;
+      line-height: 1.2;
+      font-family: "Kanit", sans-serif;}
+    
+ 
+    </style>
+  </head>
+
+
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top w3-hover-shadow w3-card" style="z-index:3">
+<div class="w3-bar w3-white w3-card" style="height:80px" id="myNavbar" >
+   
+<a href="https://createcosystem.com#recharge-electrique" class="w3-bar-item w3-button " style="font-size: 24px;font-weight: 600;color:#3b4244; padding:8px;padding-right:2%!important;padding-left:2%!important" >
+<img src="./images/logo.png" class="w3-hide-large w3-hide-medium" alt="CREAT ECO SYSTEM" width="63px" height="63px" ">
+<img src="./images/empty.png" class="w3-hide-small " alt="CREAT ECO SYSTEM" width="40px" height="63px" style="padding-left:2%;padding-right:2%">
+CREAT ECO SYSTEM </a>
+
+
+<div>
+<!-- Right-sided navbar links -->
+<div class="w3-right w3-hide-small" style="padding-right:15px" >
+<!--hoover top -->  
+<div class="w3-dropdown-hover w3-white" >
+<button class="w3-button w3-sbutton" ><a href="https://createcosystem.com/#Prestations" style="text-decoration:none"><i class="fa-solid fa-charging-station"></i> PRÉSTATIONS &nbsp;<i class="fas fa-angle-down"></i> </a></button>
+<div class="w3-dropdown-content w3-bar-block w3-card"  >   
+<a href="https://createcosystem.com/bornes-particuliers.html" class="w3-bar-item w3-button" style="text-align:right" >PARTICULIERS &nbsp;&nbsp;<i class="fa fa-home"></i></a>
+<a href="https://createcosystem.com/bornes-collectivites.html" class="w3-bar-item w3-button"style="text-align:right" > COLLECTIVITÉS &nbsp;&nbsp;  <i class="fas fa-building"></i></a>
+<a href="https://createcosystem.com/bornes-parkings.html" class="w3-bar-item w3-button" style="text-align:right" > PARKINGS &nbsp;&nbsp;  <i class="fas fa-parking"></i></a>
+</div>    
+</div>
+<!--END hoover top -->  
+
+      <a href="https://createcosystem.com/#offres" class="w3-bar-item w3-button w3-sbutton"><i class='fas fa-tags'></i> OFFRES</a>
+      <a href="https://createcosystem.com/#agrements" class="w3-bar-item w3-button w3-sbutton"><i class="fa fa-award"></i> AGRÉMENTS</a>
+      <a href="https://createcosystem.com/#contact" class="w3-bar-item w3-button w3-sbutton"><i class="fa fa-envelope"></i> CONTACT</a>
+
+
+
+    </div>
+
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-sbutton w3-right w3-hide-large w3-hide-medium "   onclick="w3_open()" >
+      <i class="fa fa-bars" style="padding-right:10px;padding-left:10px"></i>
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large " style="display:none" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-12 w3-opacity" style="font-variant:small-caps;text-align:right">fermer &nbsp;×</a>
+<div>
+  <a href="https://createcosystem.com/#Prestations"  class="w3-bar-item w3-button " style="height:28px"> <i style='font-size:18px' class='fas'>&#xf5e7;</i>&nbsp;  PRÉSTATIONS</a>
+
+  <button class="dropdown-btn w3-bar-item w3-button w3-card" style="box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 4px 0 rgba(0,0,0,0.12); padding-top:0px ;text-align:right; height:9px ; "> <i class="fa fa-angle-down" style="font-size:10px;vertical-align:top"></i>
+  </button>
+  <div class="dropdown-container  w3-opacity" style="display:none">
+    
+<a href="https://createcosystem.com/bornes-particuliers.html" class="w3-bar-item w3-button" style="text-align:right;font-variant:small-caps" >particuliers&nbsp;  <i class="fa fa-home"></i></a>
+<a href="https://createcosystem.com/bornes-collectivites.html" class="w3-bar-item w3-button" style="text-align:right;font-variant:small-caps"  >
+Collectivités &nbsp;  <i class="fas fa-building"></i></a>
+<a href="https://createcosystem.com/bornes-parkings.html" class="w3-bar-item w3-button" style="text-align:right;font-variant:small-caps" >parkings  &nbsp;  <i class="fas fa-parking"></i></a>
+  </div>
+  </div>
+
+  <a href="https://createcosystem.com/#offres" onclick="w3_close()" class="w3-bar-item w3-button"><i style='font-size:18px' class='fas'>&#xf02c;</i>&nbsp;  OFFRES</a>
+
+  <a href="https://createcosystem.com/#agrements" onclick="w3_close()" class="w3-bar-item w3-button"><i style='font-size:18px' class='fas'>&#xf559;</i>&nbsp;  AGRÉMENTS</a>
+
+    
+  <a href="https://createcosystem.com/#contact" onclick="w3_close()" class="w3-bar-item w3-button"><i style='font-size:18px' class='fas'>&#xf0e0;</i>&nbsp;  CONTACT</a>
+  <br>
+
+  
+</nav>
+
+
+
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>
